@@ -102,33 +102,69 @@ Warm regards,
 ${your_name}
 ```
 
-## Send Invitation Email to Candidate
-Send an invitation email to the candidate and CC private@fesod.apache.org:
+## Send NOTICE to IPMC
+After announcing the vote result on the PPMC private list, send a NOTICE email to the IPMC (private@incubator.apache.org) to inform them of the new PPMC member addition:
 
 Subject:
 
 ```text
-Invitation to become Apache Fesod(incubating) PPMC member: ${candidate_name}
+[NOTICE] New PPMC member for Apache Fesod (Incubating): ${candidate_name}
 ```
 
 Body:
 
 ```text
-Hi ${candidate_name},
+Hi IPMC,
 
-The Fesod Podling Project Management Committee (PPMC) hereby offers
-you membership in PPMC. These privileges are offered on the
-understanding that you'll use them reasonably and with common sense.
-We like to work on trust rather than unnecessary constraints.
+Apache Fesod (Incubating) PPMC has voted in ${candidate_name} as a new PPMC member.
 
-Of course, you can decline and instead remain as a contributor,
-participating as you do now.
+Vote result: ${N} +1 binding votes, no vetoes
+Vote thread: https://lists.apache.org/thread/${vote_thread}
 
-This personal invitation is a chance for you to accept or decline in private.
-Please let us know in reply to this message whether you accept or decline.
+The PPMC will now send an invitation to the candidate to join the PPMC.
 
-Warm regards,
+Regards,
 ${your_name}
+Apache Fesod PPMC Member
+```
+
+## Send Invitation Email to Candidate
+After sending the NOTICE to IPMC, send a formal invitation email to the candidate and CC private@fesod.apache.org:
+
+Subject:
+
+```text
+[INVITATION] Apache Fesod (Incubating) PPMC Membership for ${candidate_name}
+```
+
+Body:
+
+```text
+Dear ${candidate_name},
+
+On behalf of the Apache Fesod (Incubating) Podling Project Management Committee (PPMC), I am pleased to invite you to become a PPMC member of the Apache Fesod project.
+
+The PPMC has voted to approve your membership based on your valuable contributions to the project. As a PPMC member, you will have the privilege to:
+
+- Participate in PPMC discussions and decisions
+- Vote on PPMC matters including new committers and PPMC members
+- Help guide the project's development and community growth
+- Contribute to the project's success within the Apache Software Foundation
+
+This invitation comes with the understanding that you will use these privileges responsibly and in accordance with Apache's principles of open governance and collaborative development.
+
+Of course, you may decline this invitation and continue to participate as a contributor. This is a personal invitation, and your response can be made privately.
+
+Please reply to this message to let us know whether you accept or decline this invitation.
+
+If you accept, please ensure you have completed your iCLA (Individual Contributor License Agreement) if you haven't already done so. You can check your status and complete the iCLA at: https://www.apache.org/licenses/icla.pdf
+
+We look forward to your positive response and continued contributions to Apache Fesod.
+
+Best regards,
+
+${your_name}
+Apache Fesod PPMC Member
 ```
 
 ## Add Candidate to PPMC List
